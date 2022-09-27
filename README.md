@@ -1,12 +1,3 @@
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#commands">Commands</a></li>
-  </ol>
-</details>
-
 <!-- Features -->
 ### Features
 
