@@ -18,11 +18,11 @@ public void OnPluginStart()
 	RegConsoleCmd("sm_gengl", Command_Gen, "Alias for sm_pho gen");
 
 	// ChatListener
-    AddCommandListener(ChatListener, "say");
+    	AddCommandListener(ChatListener, "say");
 	AddCommandListener(ChatListener, "say2");
 	AddCommandListener(ChatListener, "say_team");
 
-    // Hooks
+    	// Hooks
 	PTaH(PTaH_GiveNamedItemPre, Hook, GiveNamedItemPre);
 	PTaH(PTaH_GiveNamedItemPost, Hook, GiveNamedItemPost);
 }
