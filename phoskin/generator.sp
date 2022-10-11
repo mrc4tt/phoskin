@@ -24,12 +24,12 @@ void Pho_Generate(
 		Pho_Weapon_SetPaintIndex(weapon, paintIndex);
 		Pho_Weapon_SetPaintSeed(weapon, paintSeed);
 		Pho_Weapon_SetPaintWear(weapon, paintWear);
-        Pho_Weapon_SetQuality(weapon, slot == ESlot_Knife ? 3 : quality != -1 ? quality : 0);
-        Pho_Weapon_SetStattrak(weapon, stattrak, stattrackValue, slot != ESlot_Knife);
-        if (slot != ESlot_Knife) {
-		    Pho_Weapon_SetStickers(weapon, stickers);
-	    }
-        Pho_Weapon_SetNameTag(weapon, "");
+		Pho_Weapon_SetQuality(weapon, slot == ESlot_Knife ? 3 : quality != -1 ? quality : 0);
+		Pho_Weapon_SetStattrak(weapon, stattrak, stattrackValue, slot != ESlot_Knife);
+        	if (slot != ESlot_Knife) {
+		Pho_Weapon_SetStickers(weapon, stickers);
+	    	}
+        	Pho_Weapon_SetNameTag(weapon, "");
 		Pho_Weapon_Refresh(client, weapon, true);
 
 	}
@@ -65,7 +65,7 @@ int Pho_Weapon_GetAndPrepareEquippedWeapon(int client) {
     int weapon = GetEntPropEnt(client, Prop_Send, "m_hActiveWeapon");
     if(weapon == -1) return -1;
 
-    SetEntProp(weapon, Prop_Send, "m_iAccountID", GetSteamAccountID(client));
+    	SetEntProp(weapon, Prop_Send, "m_iAccountID", GetSteamAccountID(client));
 	SetEntPropEnt(weapon, Prop_Send, "m_hOwnerEntity", client);
 	SetEntPropEnt(weapon, Prop_Send, "m_hPrevOwner", -1);
 	SetEntProp(weapon, Prop_Send, "m_iItemIDHigh", -1);
